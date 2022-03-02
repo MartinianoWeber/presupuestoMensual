@@ -140,13 +140,15 @@ btnAgregar.addEventListener('click', (e) =>{
     if((eventos.tipo !=='') && (eventos.total !=='')){
         gastosArray.push(new datos(eventos))
         
-        let filtrado = gastosArray.filter(elm => elm.tipo === eventos.tipo)
+        let filtrado = gastosArray.filter(elm => elm.id === eventos.id)
         precioArray.push(filtrado[0].total)
         validacion.validacion = 1
         filtrado[0].restar()
         generarHtml ()
         formulario.reset()
-        
+        eventos.tipo =''
+        eventos.total =''
+
     }else{
         errorCampos.innerHTML= `<p class="Error__campos"> Error campos vacios </p> `
         setTimeout(() =>{
@@ -171,7 +173,7 @@ function generarHtml (){
         elm.addEventListener('click', (e) => {
             e.preventDefault()
 
-            let filtrado = gastosArray.filter(elm => elm.tipo === eventos.tipo)
+            let filtrado = gastosArray.filter(elm => elm.id === eventos.id)
             validacion.validacion = 2
             datosEliminar.eliminar = parseInt(e.path[1].childNodes[5].innerText)
             filtrado[0].restar()

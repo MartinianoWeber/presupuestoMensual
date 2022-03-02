@@ -1,0 +1,191 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Generales */
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Nunito Sans";
+  color: #FFFFFF;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/** Utilidades **/
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.centrar-texto {
+  text-align: center;
+}
+
+.subrayado {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: #EB0000;
+}
+
+.main__Background {
+  background: #0575E6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: auto;
+  height: 100vh;
+}
+
+.main__titulo {
+  display: flex;
+  justify-content: center;
+}
+.main__titulo h1 {
+  margin-top: 4rem;
+  font-size: 4rem;
+}
+
+.main__calculadora {
+  display: flex;
+  margin: auto;
+  margin-top: 4rem;
+  background-color: rgba(36, 24, 24, 0.651);
+  width: 900px;
+  border-radius: 2rem;
+  height: auto;
+  padding: 5rem;
+}
+
+.main__gridPrincipal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  gap: 2rem;
+}
+
+.main__hijo {
+  display: flex;
+  flex-direction: column;
+}
+.main__hijo h2 {
+  font-size: 3rem;
+}
+.main__hijo a {
+  color: white;
+  background-color: #4a025c;
+  width: 150px;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  margin: auto;
+}
+
+.main__input {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.main__input input {
+  width: 200px;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: rgba(36, 24, 24, 0.11);
+  border: solid 1px blue;
+  outline: none;
+  color: white;
+}
+
+.main__hijo2 {
+  display: flex;
+  flex-direction: column;
+}
+.main__hijo2 h2 {
+  font-size: 3rem;
+}
+
+.hijo2__card {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.hijo2__card a {
+  color: white;
+  background-color: #0575E6;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+
+.hijo2__card2 {
+  display: flex;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.card2__presupuesto {
+  background-color: #180350;
+  padding: 0.5rem;
+}
+
+.card2__restanteOk {
+  background-color: #0d701b;
+  padding: 0.5rem;
+}
+
+.card2__restantemid {
+  background-color: #56700d;
+  padding: 0.5rem;
+}
+
+.card2__restantelow {
+  background-color: #700d0d;
+  padding: 0.5rem;
+}
+
+.no-view {
+  display: none;
+}
+
+.error {
+  background-color: black;
+  width: 200px;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.Error__campos {
+  font-size: 2rem;
+  border: 1px solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

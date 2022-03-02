@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Presupuesto mensual</title>
+</head>
+<body>
+    <main class="main__Background">
+        <div class="main__titulo">
+            <h1>Gasto Mensual</h1>
+        </div>
+        <section class="main__calculadora">
+            <div class="main__gridPrincipal">
+                <div class="main__hijo">
+                    <h2>Añade tus gastos aqui:</h2>
+
+                    <div class="main__input">
+                        <p>Presupuesto:</p>
+                        <input id="presupuesto" type="text">
+                    </div>
+                    <form id="formulario" action="">
+                    <div class="main__input">
+                        <p>Gasto:</p>
+                        <input id="gasto" type="text">
+                    </div>
+                    <div class="main__input">
+                        <p>Cantidad:</p> 
+                        <input id="cantidad" type="text">
+                    </div>
+                </form>
+                    <a id="btnAgregar" href="">Agregar gasto</a>
+                    <div class="error" id="errorCampos"></div>
+                </div>
+
+                <div class="main__hijo2">
+                    <h2> Listado de gastos: </h2>
+                    <div id="list">
+
+                    </div>
+                   
+                    <div class="hijo2__card2">
+                        <div id="presupuestoText" class="card2__presupuesto">
+                            <p>Presupuesto: $0</p>
+                        </div>
+                        <div id="restante" class="card2__restante">
+                            <p>Restante: $0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+</html>
